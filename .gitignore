@@ -1,0 +1,22 @@
+2D_Navier_Stokes
+*/data
+
+# Editor settings
+.vscode/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# MATLAB and HDF5 data files
+*.mat
+*.h5
+
+# Trained neural-network models and checkpoints
+**/nets/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.keras
+*.safetensors

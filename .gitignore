@@ -1,5 +1,9 @@
-2D_Navier_Stokes
+# Data folders
 */data
+
+# jax-cfd
+2D_Navier_Stokes/jax_cfd
+2D_Navier_Stokes/0_generate_data.py
 
 # Editor settings
 .vscode/

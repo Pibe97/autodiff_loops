@@ -110,7 +110,5 @@ if __name__ == '__main__':
     print('Stage 2 done.')
 
     # Save
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
     jfn.save_jax_state(trained_model_state, net_folder)
     sio.savemat(os.path.join(net_folder, 'losses.mat'), {'loss' : train_loss, 'test_loss' : test_loss, 'key': key, 'idx': idx})

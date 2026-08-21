@@ -105,7 +105,9 @@ if __name__ == '__main__':
         plt.show()
 
         # Save
-        sio.savemat(os.path.join(conv_folder, guess_name), {'h' : h2, 'u' : u2, 'T': T2})
+        if not os.path.exists(conv_folder): 
+            os.makedirs(conv_folder)
+        sio.savemat(os.path.join(conv_folder, guess_name), {'h' : h2, 'u0' : u2, 'T0': T2})
     else:
         print('Latent loop did not converge.')
 

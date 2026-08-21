@@ -1,0 +1,17 @@
+# Minimal direct dependencies from the CUDA 12 environment used for this work.
+jax[cuda12]==0.4.30
+flax==0.8.5
+h5py==3.12.1
+jaxopt==0.8.3
+matplotlib==3.9.2
+numpy==2.0.2
+optax==0.2.3
+orbax-checkpoint==0.6.4
+scipy==1.13.1
+
+# PyTorch is used only for CPU-side data loading in the training scripts.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.0+cpu
+
+# Fork with the dealiasing-filter correction used for the Kolmogorov flow.
+jax-cfd @ git+https://github.com/Pibe97/jax-cfd.git@main
